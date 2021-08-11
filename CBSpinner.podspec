@@ -30,9 +30,9 @@ Pod::Spec.new do |s|
 
   s.social_media_url = 'https://twitter.com/UmarFar75903100'
 
-  s.source_files  = 'Source/**/*.swift'
-  s.source_files  = 'Resources/**/*.xcassets'
-  s.swift_version = '5.0'
+  s.source_files      = 'Source/**/*.swift'
+  s.resource_bundles  = 'Resources/**/*.xcassets'
+  s.swift_version     = '5.0'
   
   # s.resource_bundles = {
   #   'CBSpinner' => ['CBSpinner/Assets/*.png']
