@@ -11,19 +11,12 @@ Pod::Spec.new do |s|
   s.version          = '0.1.0'
   s.summary          = 'A very simple to use activity indicator'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
 "You can add this beautiful spinner with just a single line of code. It's completely customiseable; You can customise the center image, line colors as-well as the size of the spinner."
                        DESC
 
   s.homepage         = 'https://github.com/devOmar561/CBSpinner'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'MIT', :file => 'LICENSE.md' }
   s.author           = { 'devOmar561' => 'dev.omar561@gmail.com' }
   s.source           = { :git => 'https://github.com/devOmar561/CBSpinner.git', :branch => "master", :tag => s.version.to_s }
 
@@ -32,14 +25,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '12.1'
   
   s.source_files      = 'Source/**/*.swift'
-  s.resources         = 'Resources/**/*.xcassets'
-  s.swift_version     = '5.0'
-  
-  # s.resource_bundles = {
-  #   'CBSpinner' => ['CBSpinner/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.ios.resources     = 'Resources/Assets.xcassets'
+  s.swift_version     = '5.0' 
 end
