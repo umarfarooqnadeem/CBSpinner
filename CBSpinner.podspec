@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CBSpinner'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A very simple to use activity indicator'
 
   s.description      = <<-DESC
@@ -26,5 +26,5 @@ Pod::Spec.new do |s|
   
   s.source_files      = 'Source/**/*.swift'
   s.ios.resources     = 'Resources/Assets.xcassets'
-  s.swift_version     = '5.0' 
+  s.swift_version     = '5.0'
 end
