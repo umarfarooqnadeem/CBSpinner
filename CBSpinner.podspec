@@ -26,10 +26,11 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'devOmar561' => 'dev.omar561@gmail.com' }
   s.source           = { :git => 'https://github.com/devOmar561/CBSpinner.git', :branch => "master", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.social_media_url = 'https://twitter.com/UmarFar75903100'
 
+  s.ios.deployment_target = '12.1'
+  
   s.source_files      = 'Source/**/*.swift'
   s.resources         = 'Resources/**/*.xcassets'
   s.swift_version     = '5.0'
