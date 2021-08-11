@@ -1,0 +1,22 @@
+{
+  "name": "CBSpinner",
+  "version": "0.1.0",
+  "summary": "A short description of CBSpinner.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/devOmar561/CBSpinner",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "devOmar561": "dev.omar561@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/devOmar561/CBSpinner.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "CBSpinner/Classes/**/*"
+}

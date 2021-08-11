@@ -1,0 +1,16 @@
+PODS:
+  - CBSpinner (0.1.0)
+
+DEPENDENCIES:
+  - CBSpinner (from `../`)
+
+EXTERNAL SOURCES:
+  CBSpinner:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CBSpinner: 1f2492b81e3a34ad0dabfa133019e952a64dc863
+
+PODFILE CHECKSUM: 4f818848c9179da696f56935ad71619a5c2618ad
+
+COCOAPODS: 1.10.2

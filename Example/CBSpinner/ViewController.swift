@@ -7,18 +7,19 @@
 //
 
 import UIKit
+import CBSpinner
 
 class ViewController: UIViewController {
 
+    let spinner: CBActivityIndicator = CBActivityIndicator()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        spinner.showSpinner(onView: view)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10) { [weak self] in
+            self?.spinner.removeSpinner()
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 

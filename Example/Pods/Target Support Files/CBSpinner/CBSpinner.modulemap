@@ -1,0 +1,6 @@
+framework module CBSpinner {
+  umbrella header "CBSpinner-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -17,7 +17,13 @@ CBSpinner is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '12.0'
+use_frameworks!
+
+target 'MyApp' do
 pod 'CBSpinner'
+end
 ```
 
 ## Author
