@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'CBSpinner_Example' do
+  pod 'CBSpinner', :path => '../'
+
+  target 'CBSpinner_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
