@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		345BD32826C457BA003B3B44 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345BD32726C457BA003B3B44 /* UIImage+Ext.swift */; };
 		345FBEFD26C414A300BD03E9 /* CBSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345FBEFC26C414A300BD03E9 /* CBSpinner.swift */; };
 		345FBEFF26C4184E00BD03E9 /* CALayer+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345FBEFE26C4184E00BD03E9 /* CALayer+Ext.swift */; };
 		345FBF0126C418A200BD03E9 /* BinaryInteger+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345FBF0026C418A200BD03E9 /* BinaryInteger+Ext.swift */; };
 		345FBF0426C41F5500BD03E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 345FBF0326C41F5500BD03E9 /* Assets.xcassets */; };
+		34F2D55226C4310500D9B5B1 /* Bundle+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F2D55126C4310500D9B5B1 /* Bundle+Ext.swift */; };
 		39B22AD44369ACF011640A6674FEE037 /* Pods-CBSpinner_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1270C636B7C4D8B9C41AA699325549 /* Pods-CBSpinner_Tests-dummy.m */; };
 		4CF7D7A9C4DE4E150F5085E5C4D8D816 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		845993C5DE5A82A77DEE5224CF4090F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -48,10 +50,12 @@
 		1B9A4F00448809FE441A84EC6926C222 /* CBSpinner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CBSpinner.debug.xcconfig; sourceTree = "<group>"; };
 		217C41678941055E39AC2D86D18113B8 /* CBSpinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CBSpinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		311BE13FA9CF34C59FCD214D517CBD21 /* Pods-CBSpinner_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CBSpinner_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		345BD32726C457BA003B3B44 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
 		345FBEFC26C414A300BD03E9 /* CBSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBSpinner.swift; sourceTree = "<group>"; };
 		345FBEFE26C4184E00BD03E9 /* CALayer+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Ext.swift"; sourceTree = "<group>"; };
 		345FBF0026C418A200BD03E9 /* BinaryInteger+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinaryInteger+Ext.swift"; sourceTree = "<group>"; };
 		345FBF0326C41F5500BD03E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34F2D55126C4310500D9B5B1 /* Bundle+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Ext.swift"; sourceTree = "<group>"; };
 		3A1270C636B7C4D8B9C41AA699325549 /* Pods-CBSpinner_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CBSpinner_Tests-dummy.m"; sourceTree = "<group>"; };
 		4132ADCB825E4B0FDA80BFAE7E853181 /* Pods-CBSpinner_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CBSpinner_Example-dummy.m"; sourceTree = "<group>"; };
 		52374D54122C38B12A2D21BFEEE9E8CA /* Pods-CBSpinner_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CBSpinner_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -127,8 +131,10 @@
 			isa = PBXGroup;
 			children = (
 				345FBEFC26C414A300BD03E9 /* CBSpinner.swift */,
+				34F2D55126C4310500D9B5B1 /* Bundle+Ext.swift */,
 				345FBEFE26C4184E00BD03E9 /* CALayer+Ext.swift */,
 				345FBF0026C418A200BD03E9 /* BinaryInteger+Ext.swift */,
+				345BD32726C457BA003B3B44 /* UIImage+Ext.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -400,6 +406,8 @@
 			files = (
 				345FBEFF26C4184E00BD03E9 /* CALayer+Ext.swift in Sources */,
 				345FBF0126C418A200BD03E9 /* BinaryInteger+Ext.swift in Sources */,
+				34F2D55226C4310500D9B5B1 /* Bundle+Ext.swift in Sources */,
+				345BD32826C457BA003B3B44 /* UIImage+Ext.swift in Sources */,
 				345FBEFD26C414A300BD03E9 /* CBSpinner.swift in Sources */,
 				88638CAF47BC4AEE2440BADE52DC7F16 /* CBSpinner-dummy.m in Sources */,
 			);

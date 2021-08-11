@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+internal extension Bundle {
+    #if IS_SPM
+    static var cbSpinnerAssetBundle: Bundle = Bundle.module
+    #else
+    static var cbSpinnerAssetBundle: Bundle = Bundle(identifier: "org.cocoapods.CBSpinner")!
+    #endif
+}

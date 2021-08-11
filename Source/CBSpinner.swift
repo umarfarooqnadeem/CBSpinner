@@ -10,7 +10,7 @@ import UIKit
 @IBDesignable public class CBActivityIndicator: UIView {
     
     //MARK:- Properties
-    public var centerImage: UIImage = UIImage(named: "center-image")! {
+    public var centerImage: UIImage {
         didSet {
             setNeedsDisplay()
         }
@@ -50,11 +50,13 @@ import UIKit
     
     //MARK:- Initializers
     override init(frame: CGRect) {
+        centerImage = UIImage.loadImageOf(name: .centerImage)!
         super.init(frame: frame)
         controlDidLoad()
     }
     
     required init?(coder aDecoder: NSCoder) {
+        centerImage = UIImage.loadImageOf(name: .centerImage)!
         super.init(coder: aDecoder)
         controlDidLoad()
     }
@@ -131,17 +133,20 @@ import UIKit
     ///   - image: center image of the indicator
     ///   - color: color of the indicator
     public func showSpinner(
-        onView view              : UIView                                    ,
-        withCenterImage image    : UIImage  = UIImage(named: "center-image")!,
-        withStripColor color     : UIColor  = #colorLiteral(red: 0, green: 0.2509803922, blue: 0.4862745098, alpha: 1)                             ,
-        withSize size            : CGFloat  = 0.5                            ,
-        Identifier identifier    : String   = "Default"                      ,
+        onView view              : UIView                  ,
+        withCenterImage image    : UIImage?                ,
+        withStripColor color     : UIColor  = #colorLiteral(red: 0, green: 0.2509803922, blue: 0.4862745098, alpha: 1)           ,
+        withSize size            : CGFloat  = 0.5          ,
+        Identifier identifier    : String   = "Default"    ,
         andConstraintsSet isConstraintsSet : Bool = false
     ){
         
-        self.size        = size
-        self.color       = color
-        self.centerImage = image
+        self.size  = size
+        self.color = color
+        
+        if let image = image {
+            self.centerImage = image
+        }
         
         view.addSubview(self)
         layoutIfNeeded()
