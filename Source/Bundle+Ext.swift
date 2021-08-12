@@ -11,6 +11,6 @@ internal extension Bundle {
     #if IS_SPM
     static var cbSpinnerAssetBundle: Bundle = Bundle.module
     #else
-    static var cbSpinnerAssetBundle: Bundle = Bundle(identifier: "org.cocoapods.CBSpinner")!
+    static var cbSpinnerAssetBundle: Bundle = Bundle(for: CBSpinner.self)
     #endif
 }

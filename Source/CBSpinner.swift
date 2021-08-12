@@ -7,7 +7,7 @@
 
 import UIKit
 
-@IBDesignable public class CBActivityIndicator: UIView {
+@IBDesignable public class CBSpinner: UIView {
     
     //MARK:- Properties
     public var centerImage: UIImage {
@@ -134,7 +134,7 @@ import UIKit
     ///   - color: color of the indicator
     public func showSpinner(
         onView view              : UIView                  ,
-        withCenterImage image    : UIImage?                ,
+        withCenterImage image    : UIImage? = nil          ,
         withStripColor color     : UIColor  = #colorLiteral(red: 0, green: 0.2509803922, blue: 0.4862745098, alpha: 1)           ,
         withSize size            : CGFloat  = 0.5          ,
         Identifier identifier    : String   = "Default"    ,
@@ -157,7 +157,7 @@ import UIKit
 }
 
 //MARK:- Drawing paths
-private extension CBActivityIndicator {
+private extension CBSpinner {
     func drawCircularLayer(with radius:CGFloat, color: UIColor) -> CAShapeLayer {
         let bezierPath = UIBezierPath()
         

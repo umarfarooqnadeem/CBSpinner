@@ -11,7 +11,7 @@ import CBSpinner
 
 class ViewController: UIViewController {
 
-    let spinner: CBActivityIndicator = CBActivityIndicator()
+    let spinner: CBSpinner = CBSpinner()
     
     override func viewDidLoad() {
         super.viewDidLoad()
